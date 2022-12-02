@@ -8,7 +8,7 @@ function menuShow() {
     }
 }
 function menuButtonCloseShow() {
-    let buttonCloseShow = document.querySelector("nav .closeMenu")
+    let buttonCloseShow = document.querySelector(".closeMenu")
 
     if(buttonCloseShow.classList.contains("showw")) {
         buttonCloseShow.classList.remove("showw")
@@ -19,7 +19,8 @@ function menuButtonCloseShow() {
 
 function menu() {
     menuShow();
-    menuButtonCloseShow()
+    menuButtonCloseShow();
+    bodyOverflow()
 }
 
 // function navOnTop() {
@@ -36,15 +37,35 @@ function menu() {
 //     }
 // }
 function navOnTop() {
-    let menu = document.querySelector("nav")
-    let logo = document.querySelector(".navTop")
+    let menu = document.querySelector(".allNavContent")
+    let logo = document.querySelector(".allNavTopContent")
+    let shadow = document.querySelector(".menuList")
     
 
     if(scrollY > 100 ) {
         menu.classList.add("sideBarHidenn") 
         logo.classList.add("showw") 
+        shadow.classList.add("boxShadowTop") 
     } else {
         menu.classList.remove("sideBarHidenn")
         logo.classList.remove("showw")
+        shadow.classList.remove("boxShadowTop") 
+
     }
+}
+
+
+function bodyOverflow() {
+    let menu = document.querySelector("body")
+    let pointMenu = document.querySelector("nav .menuList")
+
+    // let logo = document.querySelector(".navTop")
+    
+
+    if(pointMenu.classList.contains("show")) {
+        menu.classList.add("offScroll")
+} else {
+        menu.classList.remove("offScroll")
+    
+}
 }
