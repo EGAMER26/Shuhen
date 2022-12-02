@@ -69,3 +69,28 @@ function bodyOverflow() {
     
 }
 }
+
+
+// -----------------------------------------------CARRD------------------------------------------------------
+
+function cardImgHover() {
+    let cardImg = document.querySelector(".ilustracaoProduto")
+    let cardP = document.querySelector(".descricaoProduto")
+
+    if(cardImg.classList.contains("cardImgHover")) {
+        cardImg.classList.remove("cardImgHover")
+        cardP.classList.remove("showw")
+    } else { cardImg.classList.add("cardImgHover") 
+            cardP.classList.add("showw") 
+}
+}
+
+    let img = document.querySelector("#ilustracaoDoProduto")
+    let blackButton = document.getElementById("blackChoice")
+    let whiteButton = document.getElementById("whiteChoice")
+
+    blackButton.addEventListener("mouseover", function(){
+        img.src = "Assets/produto2.png" });
+    whiteButton.addEventListener("mouseover", function(){
+        img.src = "Assets/produto1.png"
+    });

@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shūhen</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
 </head>
 <body onscroll="navOnTop()">
     <nav>
@@ -70,19 +72,41 @@
         </div>
     </div>
 
-
+<!-- 
     <main>
 
-    </main>
+    </main> -->
     <section class="produtos">
-        <div class="man">
-            <div class="products">
-              <div class="product"><a href=""><h1>oi</h1></a></div>
-              <div class="product"></div>
-              <div class="product"></div>
-              <div class="product"></div>
-            </div>
+        <div onmouseenter="cardImgHover()" onmouseleave="cardImgHover()" class="card">
+              <div class="product">
+                <div class="ilustracaoProduto"><img id="ilustracaoDoProduto" width="200" src="/Assets/produto1.png" alt="Teclado"></div>
+
+                <div class="tituloProduto">
+                    <h2>REDRAGON Soraka</h2>
+                </div>
+
+                <div class="precoProduto">
+                    <h2>R$ 250,00</h2>
+                </div>
+                <div class="opcoes">
+                    <div class="cores">
+                        <button id="whiteChoice" class="white"></button>
+                        <button id="blackChoice" class="black"></button>
+                    </div>
+                </div>
+
+                
+
+                <div class="descricaoProduto">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, earum animi assumenda.</p>
+                </div>
+
+
+
+              </div>
+              
           </div>
+          
     </section>
 
 

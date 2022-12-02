@@ -1,6 +1,7 @@
 :root {
     --main-color: hsl(114, 100%, 50%);
     --secondery-color: hsl(0, 0%, 0%);
+    font-size: 62.5%;
 }
 
 
@@ -10,12 +11,18 @@
     padding: 0;
     box-sizing: border-box;
     transition: 400ms;
+    /* font-family: 'Source Code Pro', monospace; */
 }
 body {
     background-color: black;
+    font-size: 1.4rem;
+    font-family: 'Orbitron', sans-serif;
 }
 .offScroll{
     overflow: hidden;
+}
+.showw {
+    transform: translateY(0);
 }
 /* -----------------------------------------MEDIA---------------------------------------- */
 @media (min-width: 500px) {
@@ -40,7 +47,7 @@ body {
     box-shadow: 1px 0 200px 1rem var(--main-color);
     /* filter: blur(1px); */
     
-    /* transform: translateX(-100%); */
+    transform: translateX(-400%);
 
 
 }
@@ -229,10 +236,16 @@ main {
   }
   
   .product {
+
+    margin-top: 20rem;
+
     width: 70%;
-    height: 20rem;
+    max-width: 54rem;
+    height: 40rem;
   
    background: transparent;
+
+   color: white;
     
     /* filter: drop-shadow(-2px 19px 32px rgba(48, 45, 38, 0.19)); */
   
@@ -297,5 +310,56 @@ main {
   
   }
 
+/* -----------------------------------------CARDS---------------------------------------- */
 
+.produtos .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.card .product {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+
+}
+.cardImgHover {
+    transform: translateY(-2rem) scale(1.2);
+
+    transition: 500ms ease-in-out;
+}
+
+
+.tituloProduto h2 {
+    margin-block: 2rem;
+}
+
+.precoProduto h2 {
+    font-size: 1.4rem;
+}
+
+.cores button {
+    width: 2rem;
+    height: 2rem;
+
+    border-radius: 50%;
+    border: none;
+
+    margin-block: 2rem;
+}
+
+.cores button:hover {
+    transform: translateY(.3rem) scale(1.2);
+}
+
+.descricaoProduto  {
+    transform: translateY(200%);
+
+}
 
