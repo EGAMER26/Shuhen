@@ -89,7 +89,7 @@ body svg:hover {
     left: 0;
     z-index: 1;
 
-    box-shadow: 0px 0px 60px 2px var(--main-color), inset 14vw 0rem 1rem 2px black;
+    box-shadow: 0px 0px 30px 2px var(--main-color), inset 14vw 0rem 1rem 2px black;
 
 
     transform: translateX(-100%);
