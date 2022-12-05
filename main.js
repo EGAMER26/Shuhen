@@ -75,15 +75,22 @@ function bodyOverflow() {
 
 function cardImgHover() {
     let cardImg = document.querySelector(".ilustracaoProduto")
-    let cardP = document.querySelector(".descricaoProduto")
 
     if(cardImg.classList.contains("cardImgHover")) {
         cardImg.classList.remove("cardImgHover")
-        cardP.classList.remove("showw")
     } else { cardImg.classList.add("cardImgHover") 
-            cardP.classList.add("showw") 
+}
+
+}
+function cardImgheadFoneHover() {
+    let cardImg = document.querySelector(".headFone")
+
+    if(cardImg.classList.contains("cardImgHover")) {
+        cardImg.classList.remove("cardImgHover")
+    } else { cardImg.classList.add("cardImgHover") 
 }
 }
+
 
     let img = document.querySelector("#ilustracaoDoProduto")
     let blackButton = document.getElementById("blackChoice")
@@ -94,3 +101,42 @@ function cardImgHover() {
     whiteButton.addEventListener("mouseover", function(){
         img.src = "Assets/produto1.png"
     });
+    function descricaoProduto() {
+        saibaMaisOn()
+        descricaoProdutoOn();
+    }
+    function descricaoProdutoOn() {
+  
+         let cardP = document.querySelector(".descricaoProduto")
+        
+        
+        if(cardP.classList.contains("showw")) {
+            cardP.classList.remove("showw")
+        }else {
+        cardP.classList.add("showw") 
+    }
+    }
+
+// -----------------------------------------------GSAP------------------------------------------------------
+
+
+function saibaMaisOn() {
+    let cardP = document.querySelector(".descricaoProduto")
+        
+        
+    if(!cardP.classList.contains("showw")) {
+    // gsap.to(".ilustracaoProduto", {y:-40, duration:.1, ease: "back"});
+    gsap.to(".tituloProduto", {y:-47, duration:.1, ease: "back"});
+    gsap.to(".precoProduto", {y:-40, duration:.1, ease: "back"});
+    gsap.to(".opcoes", {y:-40, duration:.1, ease: "back"});
+    gsap.to(".saibaMais", {y:-40, duration:.1, ease: "back"});
+
+} else {
+    // gsap.to(".ilustracaoProduto", {y:0, duration:.1, ease: "back"});
+    gsap.to(".tituloProduto", {y:0, duration:.1, ease: "back"});
+    gsap.to(".precoProduto", {y:0, duration:.1, ease: "back"});
+    gsap.to(".opcoes", {y:0, duration:.1, ease: "back"});
+    gsap.to(".saibaMais", {y:0, duration:.1, ease: "back"});
+
+}
+}

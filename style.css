@@ -23,6 +23,7 @@ body {
 }
 .showw {
     transform: translateY(0);
+    display: flex!important;
 }
 /* -----------------------------------------MEDIA---------------------------------------- */
 @media (min-width: 500px) {
@@ -321,11 +322,14 @@ main {
 }
 
 .card .product {
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
+    
+    /* overflow: hidden; */
 
 
 }
@@ -358,8 +362,45 @@ main {
     transform: translateY(.3rem) scale(1.2);
 }
 
+.saibaMais button{
+
+    height: 3rem;
+    width: 11rem;
+
+    font-weight: 700;
+
+    border: none;
+    border-radius: 1rem 0 1rem 0;
+
+    background-color: var(--main-color);
+
+    cursor: pointer;
+
+} 
+.saibaMais button:hover {
+    color: white;
+    font-weight: 900;
+    box-shadow: 0 0 5rem var(--main-color), inset 0 0 2px var(--main-color);
+
+    border-radius: 0 1rem 0 1rem;
+
+    transform: scale(1.2);
+} 
+
 .descricaoProduto  {
     transform: translateY(200%);
 
+    position: relative;
+    bottom: 2rem;
+    /* display: none; */
+
+}
+.justForOverflow {
+    overflow: hidden;
+}
+
+
+.descriptionOn {
+    
 }
 
