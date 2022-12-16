@@ -168,3 +168,25 @@ document.getElementById("radio"+count).checked = true;
 
 
 // -----------------------------------------------FIM SLIDER ROTATIVO------------------------------------------------------
+
+
+// -----------------------------------------------MAIN PRODUCT01------------------------------------------------------
+
+function nextImageMainProduct() {
+    var onImage = document.querySelector("#count")
+
+    // if(onImage.classlist.contains("nextImage")){
+    //     onImage.classList.remove("nextImage")
+    // } else {
+        onImage.classList.add("nextImage")
+    // }
+
+ 
+}
+
+
+
+
+
+
+// -----------------------------------------------FIM MAIN PRODUCT01------------------------------------------------------

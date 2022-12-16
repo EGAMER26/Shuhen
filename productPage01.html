@@ -4,10 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shūhen</title>
+    <title>productPage</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
 </head>
 <body onscroll="navOnTop()">
     <nav>
@@ -71,185 +69,36 @@
             </div>
         </div>
     </div>
-<header>
-    <div class="slider">
-        <div class="slides">
-            <!-- Radio Buttons -->
-            <input type="radio" name="radio-btn" id="radio1">
-            <input type="radio" name="radio-btn" id="radio2">
-            <input type="radio" name="radio-btn" id="radio3">
-            <input type="radio" name="radio-btn" id="radio4">
-            <!-- Final Radio Buttons -->
+<main class="product01">
+    <div class="mainProductPicture01">
+        <img id="count" src="/Assets/product01.webp" alt="">
+        <img id="count" src="/Assets/mainProduct02.webp" alt="">
+        <img id="count" src="/Assets/mainProduct03.webp" alt="">
+        <img id="count" src="/Assets/mainProduct04.webp" alt="">
 
-            <!-- Slide Images -->
-
-            <div class="slide first">
-                <img src="/Assets/slide1.jpg" alt="">
-
-            </div>
-
-            <div class="slide">
-                <img src="/Assets/slide2.jpg" alt="">
-
-            </div>
-
-            <div class="slide">
-                <img src="/Assets/slide3.jpg" alt="">
-
-            </div>
-
-            <div class="slide">
-                <img src="/Assets/slide4.jpg" alt="">
-
-            </div>
-             <!-- Fim Slide Images -->
-             <!-- Navigation auto -->
-             <div class="navigation-auto">
-                <div class="auto-btn1"></div>
-                <div class="auto-btn2"></div>
-                <div class="auto-btn3"></div>
-                <div class="auto-btn4"></div>
-             </div>
-
+        <div class="nextImageRigt" onclick="nextImageMainProduct()">
+            <svg width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 6H19M19 6L14 1M19 6L14 11" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                
         </div>
-
-        <div class="manual-navigation">
-            <label for="radio1" class="manual-btn"></label>
-            <label for="radio2" class="manual-btn"></label>
-            <label for="radio3" class="manual-btn"></label>
-            <label for="radio4" class="manual-btn"></label>
+        <div class="nextImageLeft"onclick="nextImageMainProduct()">
+            <svg width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19 6H1M1 6L6 11M1 6L6 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                
         </div>
-
-
-
-
     </div>
-</header>
-<!-- 
-    <main>
-
-    </main> -->
-    <section class="produtos">
-        <div  class="card">
-              <div class="product" onmouseenter="cardImgHover()" onmouseleave="cardImgHover()">
-                <div class="ilustracaoProduto"><img id="ilustracaoDoProduto" width="200" src="/Assets/produto1.png" alt="Teclado"></div>
-
-                <div class="justForOverflow">
-                    <div class="tituloProduto">
-                        <h2>REDRAGON Soraka</h2>
-                    </div>
-                    <div class="precoProduto">
-                        <h2>R$ 250,00</h2>
-                    </div>
-                    <div class="opcoes">
-                        <div class="cores">
-                            <button id="whiteChoice" class="white"></button>
-                            <button id="blackChoice" class="black"></button>
-                        </div>
-                    </div>
-                    <div class="saibaMais"><button onclick="descricaoProduto()">SAIBA MAIS</button> </div>
-                    
-                    <div class="descricaoProduto">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, earum animi assumenda.</p>
-                    </div>
-                </div>
 
 
-              </div>
-              
-          </div>
-
-          <div  class="card">
-            <div class="product" onmouseenter="cardImgheadFoneHover()" onmouseleave="cardImgheadFoneHover()">
-              <div class="ilustracaoProduto"><img id="ilustracaoDoProduto" class="headFone" width="200" src="/Assets/produto3.png" alt="Teclado"></div>
-
-              <div class="justForOverflow">
-                  <div class="tituloProduto">
-                      <h2>REDRAGON Soraka</h2>
-                  </div>
-                  <div class="precoProduto">
-                      <h2>R$ 250,00</h2>
-                  </div>
-                  <div class="opcoes">
-                      <div class="cores">
-                          <button id="whiteChoice" class="white"></button>
-                          <button id="blackChoice" class="black"></button>
-                      </div>
-                  </div>
-                  <div class="saibaMais"><button onclick="descricaoProduto()">SAIBA MAIS</button> </div>
-                  
-                  <div class="descricaoProduto">
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, earum animi assumenda.</p>
-                  </div>
-              </div>
+</main>
 
 
 
-            </div>
-            
-        </div>
-
-        <div  class="card">
-            <div class="product" onmouseenter="cardImgHover()" onmouseleave="cardImgHover()">
-              <div class="ilustracaoProduto"><img id="ilustracaoDoProduto" width="200" src="/Assets/produto1.png" alt="Teclado"></div>
-
-              <div class="justForOverflow">
-                  <div class="tituloProduto">
-                      <h2>REDRAGON Soraka</h2>
-                  </div>
-                  <div class="precoProduto">
-                      <h2>R$ 250,00</h2>
-                  </div>
-                  <div class="opcoes">
-                      <div class="cores">
-                          <button id="whiteChoice" class="white"></button>
-                          <button id="blackChoice" class="black"></button>
-                      </div>
-                  </div>
-                  <div class="saibaMais"><button onclick="descricaoProduto()">SAIBA MAIS</button> </div>
-                  
-                  <div class="descricaoProduto">
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, earum animi assumenda.</p>
-                  </div>
-              </div>
 
 
 
-            </div>
-            
-        </div>
 
-        <div  class="card">
-            <div class="product" onmouseenter="cardImgHover()" onmouseleave="cardImgHover()">
-              <div class="ilustracaoProduto"><img id="ilustracaoDoProduto" width="200" src="/Assets/produto1.png" alt="Teclado"></div>
-
-              <div class="justForOverflow">
-                  <div class="tituloProduto">
-                      <h2>REDRAGON Soraka</h2>
-                  </div>
-                  <div class="precoProduto">
-                      <h2>R$ 250,00</h2>
-                  </div>
-                  <div class="opcoes">
-                      <div class="cores">
-                          <button id="whiteChoice" class="white"></button>
-                          <button id="blackChoice" class="black"></button>
-                      </div>
-                  </div>
-                  <div class="saibaMais"><button onclick="descricaoProduto()">SAIBA MAIS</button> </div>
-                  
-                  <div class="descricaoProduto">
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, earum animi assumenda.</p>
-                  </div>
-              </div>
-
-
-
-            </div>
-            
-        </div>
-          
-    </section>
 
 
     <script src  = "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
